@@ -7,7 +7,7 @@ class AMod(loader.Module):
     async def watcher(self, message):
         if message.sender_id != (await message.client.get_me()).id:
             return
-        if message.text == ".pip <command>":
+        if ".pip" in message.text:
           a=message.text.split(" ")
           bashCommand = a[1]
           process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
