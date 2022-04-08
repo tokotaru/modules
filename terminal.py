@@ -14,4 +14,4 @@ class AMod(loader.Module):
             await message.edit("жди 10 секунд и получишь вывод")
             time.sleep(10)
             output, error = process.communicate()
-            await message.edit("сделано,мой повелитель,вот вывод:\n {}".format(output))
+            await message.edit("сделано,мой повелитель,вот вывод:\n {}".format(output)+"\n"+"ошибки:\n"+error)
