@@ -9,7 +9,7 @@ class AMod(loader.Module):
             return
         if ".pip" in message.text:
             a=message.text.split(" ")
-            bashCommand = a[1]
+            bashCommand = "pip3 install"+a[1]
             process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
             output, error = process.communicate()
             await message.edit("сделано,мой повелитель,вот вывод:\n {}".format(output))
