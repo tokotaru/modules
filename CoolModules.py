@@ -73,9 +73,9 @@ def strftime(time: Union[int, float]): #хуита
     )
     
 class ManyMod(loader.Module):
-    """Сброник с самыми популярными и полезными модулями! by @CREATIVE_tg1"""
+    """Сброник с самыми популярными и полезными модулями"""
     strings = {
-        "name": "CoolModules",
+        "name": "хорошие модули",
         "no_reply": "<b>[SQuotes]</b> Нет реплая",
         "processing": "<b>[SQuotes]</b> Обработка...",
         "api_processing": "<b>[SQuotes]</b> Ожидание API...",
