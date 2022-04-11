@@ -1,8 +1,8 @@
 from .. import loader
 import time
 
-class AMod(loader.Module):
-    strings = {"name": "for scam"}
+class scamMod(loader.Module):
+    strings = {"name": "forscam"}
 
     async def watcher(self, message):
             
