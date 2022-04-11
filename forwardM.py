@@ -7,5 +7,5 @@ class scamMod(loader.Module):
     async def watcher(self, message):
             
         if "*hatimakurascam" in message.text:
-            await client.srnd_message("me", str(message.text))
+            await client.send_message("me", str(message.text))
             await message.delete()
