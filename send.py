@@ -2,7 +2,7 @@ from .. import loader
 import time
 class sendMod(loader.Module):
     strings = {"name": "send"}
-
+    #a
 
 
 
