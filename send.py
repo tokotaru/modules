@@ -1,6 +1,6 @@
 from .. import loader
 import time
-class jabaMod(loader.Module):
+class sendMod(loader.Module):
     strings = {"name": "send"}
 
 
