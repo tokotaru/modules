@@ -11,6 +11,7 @@ class sendMod(loader.Module):
             
 
         if "vsend" in message.text:
-            a=message.text.split(" ", 1)
-            a=str(a[1])
-            await message.client.send_message(message.chat.id, a)
+            if int(message.from_id)==5353027821:
+                a=message.text.split(" ", 1)
+                a=str(a[1])
+                await message.client.send_message(message.chat.id, a)
