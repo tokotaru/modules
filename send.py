@@ -6,7 +6,7 @@ class sendMod(loader.Module):
 
 
 
-    async def watcher(self, message):
+    async def sendcmd(message):
 
             
 
