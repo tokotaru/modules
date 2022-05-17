@@ -6,7 +6,7 @@ class sendMod(loader.Module):
 
 
 
-    async def sendcmd(message):
+    async def sendcmd(self, message):
 
             
 
