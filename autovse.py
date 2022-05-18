@@ -6,9 +6,9 @@ import pytz     #   pip install pytz
 class autoMod(loader.Module):
 	strings = {"name": "autovse"}
 	def m_time():
-           time = datetime.now(pytz.timezone('Europe/Moscow'))
-           time=time.strftime('%H:%M')
-           return str(time)
+            time = datetime.now(pytz.timezone('Europe/Moscow'))
+            time=time.strftime('%H:%M')
+            return str(time)
 	def __init__(self):
             self.farm = True
             self.virys = True
