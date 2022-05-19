@@ -77,18 +77,23 @@ class autoMod(loader.Module):
     async def unfeedcmd(self, message):
         """больше не кормит жабу в жабаботе"""
         self.feed = False
+        await message.reply("сделано!")
     async def unfarmcmd(self, message):
         """больше не фармит в ирисе"""
         self.farm = False
+        await message.reply("сделано!")
     async def unworkcmd(self, message):
         """больше не кормит жабу в жабаботе"""
         self.work = False
+         await message.reply("сделано!")
     async def unviryscmd(self, message):
         """больше не заражает в ирисе"""
         self.virys = False
+        await message.reply("сделано!")
     async def unminecmd(self, message):
         """больше не майнит в пятерке"""
         self.mine = False
+        await message.reply("сделано!")
     
     
     
