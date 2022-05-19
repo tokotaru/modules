@@ -17,6 +17,6 @@ class autoMod(loader.Module):
         self.five = True
     async def farmcmd(self, message):
         while self.farm:
-                time=m_time()
+                time=await m_time()
                 if time == "00:00:00" or time == "04:00:00" or time == "08:00:00" or time == "12:00:00" or time == "16:00:00" or time == "20:00:00" or time == "24:00:00":
                     await message.reply("ферма")
