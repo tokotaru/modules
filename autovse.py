@@ -66,8 +66,29 @@ class autoMod(loader.Module):
             await message.reply("не правильные аргументы,введите 1,2 или 3")
     async def fivecmd(self, message):
         """майнит в @five_house_bot"""
-        while self.feed:
+        while self.mine:
                 await message.reply("/mine")
                 await sleep(86400)
         
+    async def unfeedcmd(self, message):
+        """больше не кормит жабу в жабаботе"""
+        self.feed = False
+    async def unfarmcmd(self, message):
+        """больше не фармит в ирисе"""
+        self.farm = False
+    async def unworkcmd(self, message):
+        """больше не кормит жабу в жабаботе"""
+        self.work = False
+    async def unviryscmd(self, message):
+        """больше не заражает в ирисе"""
+        self.virys = False
+    async def unminecmd(self, message):
+        """больше не майнит в пятерке"""
+        self.mine = False
+    
+    
+    
+    
+    
+    
     
