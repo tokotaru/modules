@@ -33,14 +33,14 @@ class autoMod(loader.Module):
         if work == "1" or work == "2" or work == "3":
             if work == "1":
                 self.workk = 1
-                message.reply("работа поход в столовую поставленна")
+                await message.reply("работа поход в столовую поставленна")
             if work == "2":
                 self.workk = 2
-                message.reply("работа крупье поставленна")
+                await message.reply("работа крупье поставленна")
             if work == "3":
                 self.workk = 3
-                message.reply("работа грабитель поставленна")
+                await message.reply("работа грабитель поставленна")
         else:
-            message.reply("не правильные аргументы,введите 1,2 или 3")
+            await message.reply("не правильные аргументы,введите 1,2 или 3")
         
     
