@@ -4,17 +4,17 @@ from datetime import datetime
 import pytz     #   pip install pytz
 #модуль не готов
 class autoMod(loader.Module):
-        strings = {"name": "autovse"}
-        def m_time():
-            time = datetime.now(pytz.timezone('Europe/Moscow'))
-            time=time.strftime('%H:%M:%S')
-            return str(time)
-	def __init__(self):
-            self.farm = True
-            self.virys = True
-            self.feed = True
-            self.work = True
-            self.five = True
+    strings = {"name": "autovse"}
+    def m_time():
+        time = datetime.now(pytz.timezone('Europe/Moscow'))
+        time=time.strftime('%H:%M:%S')
+        return str(time)
+    def __init__(self):
+        self.farm = True
+        self.virys = True
+        self.feed = True
+        self.work = True
+        self.five = True
         async def farmcmd(self, message):
 	    """Включает команду "Ферма". Чтобы остановить, используйте "ирисфарм стоп"."""
             while self.farm:
