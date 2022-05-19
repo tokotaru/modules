@@ -70,7 +70,8 @@ class autoMod(loader.Module):
             await message.reply("не правильные аргументы,введите 1,2 или 3")
     async def fivecmd(self, message):
         """майнит в @five_house_bot"""
-        while self.mine:
+        self.five = True
+        while self.five:
                 await message.reply("/mine")
                 await sleep(86400)
         
