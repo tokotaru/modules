@@ -85,7 +85,7 @@ class autoMod(loader.Module):
     async def unworkcmd(self, message):
         """больше не кормит жабу в жабаботе"""
         self.work = False
-         await message.reply("сделано!")
+        await message.reply("сделано!")
     async def unviryscmd(self, message):
         """больше не заражает в ирисе"""
         self.virys = False
