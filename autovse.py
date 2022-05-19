@@ -18,5 +18,5 @@ class autoMod(loader.Module):
         while self.farm:
                 time = datetime.now(pytz.timezone('Europe/Moscow'))
                 time=time.strftime('%H:%M:%S')
-                if time == "00:00:00" or time == "04:00:00" or time == "08:00:00" or time == "12:00:00" or time == "16:00:00" or time == "20:00:00" or time == "24:00:00":
+                if time == "19:12:00" or time == "04:00:00" or time == "08:00:00" or time == "12:00:00" or time == "16:00:00" or time == "20:00:00" or time == "24:00:00":
                     await message.reply("ферма")
