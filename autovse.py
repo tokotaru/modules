@@ -8,7 +8,6 @@ class autoMod(loader.Module):
     def m_time():
         time = datetime.now(pytz.timezone('Europe/Moscow'))
         time=time.strftime('%H:%M:%S')
-        return str(time)
     def __init__(self):
         self.farm = True
         self.virys = True
@@ -17,6 +16,7 @@ class autoMod(loader.Module):
         self.five = True
     async def farmcmd(self, message):
         while self.farm:
-                time=await m_time()
+                time = datetime.now(pytz.timezone('Europe/Moscow'))
+                time=time.strftime('%H:%M:%S')
                 if time == "00:00:00" or time == "04:00:00" or time == "08:00:00" or time == "12:00:00" or time == "16:00:00" or time == "20:00:00" or time == "24:00:00":
                     await message.reply("ферма")
