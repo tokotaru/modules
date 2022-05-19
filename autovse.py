@@ -15,22 +15,8 @@ class autoMod(loader.Module):
         self.feed = True
         self.work = True
         self.five = True
-        async def farmcmd(self, message):
-	    """Включает команду "Ферма". Чтобы остановить, используйте "ирисфарм стоп"."""
-            while self.farm:
-                    if m_time() == "00:00:00" or m_time() == "04:00:00" or m_time() == "08:00:00" or m_time() == "12:00:00" or m_time() == "16:00:00" or m_time() == "20:00:00" or m_time() == "24:00:00":
-                        await message.reply("Ферма")
-        """async def feedcmd(self, message):
-		"""Включает команду "покормить жабу". Чтобы остановить, используйте "ирисфарм стоп"."""
-		while self.farm:
-			await message.reply("покормить жабу")
-			await sleep(14500)"""
-        """async def watcher(self, message):
-            me = (await message.client.get_me())
-            if message.sender_id == me.id:
-                if message.text.lower() == "ирисфарм стоп":
-                    self.farm = False
-                    await message.reply("<b>Ирисфарм остановлен.</b>")
-                if message.text.lower() == "ирисвирус стоп":
-                    self.virys = False
-                    await message.reply("<b>Ирисвирус остановлен.</b>")"""
+    async def farmcmd(self, message):
+	"""Включает команду "Ферма". Чтобы остановить, используйте "ирисфарм стоп"."""
+        while self.farm:
+                if m_time() == "00:00:00" or m_time() == "04:00:00" or m_time() == "08:00:00" or m_time() == "12:00:00" or m_time() == "16:00:00" or m_time() == "20:00:00" or m_time() == "24:00:00":
+                    await message.reply("ферма")
