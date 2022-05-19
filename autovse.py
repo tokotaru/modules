@@ -37,7 +37,7 @@ class autoMod(loader.Module):
             if work == "2":
                 self.workk = 2
                 message.reply("работа крупье поставленна")
-             if work == "3":
+            if work == "3":
                 self.workk = 3
                 message.reply("работа грабитель поставленна")
         else:
