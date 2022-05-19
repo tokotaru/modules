@@ -15,22 +15,26 @@ class autoMod(loader.Module):
         self.workk = 1
     async def farmcmd(self, message):
         """майнит в ирисе"""
+        self.farm = True
         while self.farm:
                 """if time == "19:15:00" or time == "04:00:00" or time == "08:00:00" or time == "12:00:00" or time == "16:00:00" or time == "20:00:00" or time == "24:00:00":"""
                 await message.reply("ферма")
                 await sleep(14400)
     async def feedcmd(self, message):
         """кормит жабу в жабаботе"""
+        self.feed = True
         while self.feed:
                 await message.reply("покормить жабу")
                 await sleep(43200)
     async def viryscmd(self, message):
         """заражает в ирисе"""
+        self.virys = True
         while self.virys:
             await message.reply("Заразить -")
             await sleep(3600)
     async def workcmd(self, message):
         """посылает жабу на работу по вашему выбору(дефолт-столовая)"""
+        self.work= True
         if self.workk == 1:
             while self.work:
                 await message.reply("@toadbot Поход в столовую")
