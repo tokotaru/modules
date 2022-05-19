@@ -19,11 +19,11 @@ class autoMod(loader.Module):
         while self.farm:
                 """if time == "19:15:00" or time == "04:00:00" or time == "08:00:00" or time == "12:00:00" or time == "16:00:00" or time == "20:00:00" or time == "24:00:00":"""
                 await message.reply("ферма")
-                sleep(14400)
+                await sleep(14400)
     async def feedcmd(self, message):
         while self.feed:
                 await message.reply("покормить жабу")
-                sleep(43200)
+                await sleep(43200)
     async def viryscmd(self, message):
         while self.virys:
             await message.reply("Заразить -")
